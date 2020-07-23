@@ -1,1 +1,40 @@
 {{!-- //create template handlerbars can render, create a button that will submit the user input into the database --}}
+
+<h1>Cats!</h1>
+
+<h2>Burgers you have not yet eaten!</h2>
+
+<ul>
+    {{#each burgers}}
+    {{#unless sleepy}}
+    {{> burgers/burger-block uneaten=true}}
+    {{/unless}}
+    {{/each}}
+</ul>
+
+<h2>You ate the burger!</h2>
+
+<ul>
+    {{#each burgers}}
+    {{#if eaten}}
+    {{> burgers/burger-block uneaten=false}}
+    {{/if}}
+    {{/each}}
+</ul>
+
+<h2>Eat-Da-Burger!</h2>
+<form class="create-form">
+
+    <div class="form-group">
+        <label for="ca">Burger Type:</label>
+        <input type="text" id="ca" name="name">
+    </div>
+
+    <div class="form-group">
+        <label for="sleepy">Eat?</label><br>
+        <input type="radio" name="sleepy" value="1" checked> Not Yet Eaten!<br>
+        <input type="radio" name="sleepy" value="0"> Eaten
+    </div>
+
+    <button type="submit">Add Burger</button>
+</form>
