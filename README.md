@@ -1,7 +1,7 @@
 # Eat-Da-Burger
 
 Welcome to Eat-Da-Burger Restaurant! Where your wildest burgers exist! 
-To maintain social distancing, this restaurant utilizes a web application for your order. The link to the menu is here: [link]
+To maintain social distancing, this restaurant utilizes a web application for your order. The link to the menu is here: [Eat-Da-Burger Menu](https://peaceful-eyrie-94728.herokuapp.com/)
 
 You are presented with this screen:
 
